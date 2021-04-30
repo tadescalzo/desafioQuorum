@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <title>VR STORE - Desafio Quorum</title>
+    <meta name="title" content="VR STORE - Desafio Quorum">
+    <meta name="description" content="Es una landing hecha para el desafio para desarrollar una landing en base a un diseño UX brindado por los chicos. ">
+    <link rel="icon" href="images/logo.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://desafioquorum.web.app/">
+    <meta property="og:title" content="VR STORE - Desafio Quorum">
+    <meta property="og:description" content="Es una landing hecha para el desafio para desarrollar una landing en base a un diseño UX brindado por los chicos. ">
+    <meta property="og:image" content="images/storeImg1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://desafioquorum.web.app/">
+    <meta property="twitter:title" content="VR STORE - Desafio Quorum">
+    <meta property="twitter:description" content="Es una landing hecha para el desafio para desarrollar una landing en base a un diseño UX brindado por los chicos. ">
+    <meta property="twitter:image" content="images/storeImg1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">  
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </head>
+  <body>
+    <div class="blur"></div>
+    <header>
+      
+      <div class="purple headPurple"></div>
+      <img class="lightOpacity headLight" src="images/headerLight.png" alt="">
+      <div class="navbar">
+        <div class="upperNav">
+          <div class="sandwich">
+          <div class="line1"> <h2 id="featuredBtn">FEATURED</h2> </div>
+          <div class="line2"> <h2 id="gamesBtn">GAMES</h2> </div>
+          <div class="line3"> <h2 id="storeBtn">STORE</h2> </div>
+        </div>
+          <div class="rightNav">
+            <h3>Join the movement</h3>
+            <div class="social">
+            <a href="#" onclick=social()><i class="fab fa-facebook-f"></i></a>
+            <a href="#" onclick=social()><i class="fab fa-instagram"></i></a>
+            <a href="#" onclick=social()><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="headerContent">
+        <h2 id="title1">THE FUTURE IS HERE.</h2>
+        <h2 id="title2">BE PART OF IT.</h2>
+      </div>
+      <div class="headerBottom">
+        <div class="glassHeader">
+        <h3>New virtual reality lenses</h3>
+        <h4>Now with brighter colors, better graphics and more games than ever</h4>
+        <p>Release date: 04/30/21</p>
+      </div>
+      </div>
+    </header>
+    <div class="container" id="container">
+      <section class="firstSection" id="featured">
+        <div class="firstLine"></div>
+        <div class="firstImg">
+          <div class="purple firstSectionPurple"></div>
+          <img loading="lazy" class="lightOpacity firstSectionLight" src="images/bodyLight1.png" alt="">
+        </div>
+        <div class="firstSectionInfo">
+          <h2>EVERYTHING IS POSSIBLE.</h2>
+          <h4>You can go anywhere. play with who you want and when you want. You can even travel with these new experiences. Feel the change.</h4>
+          <button class="buttons" onclick=buyMain()>BUY NOW</button>
+        </div>
+      </section>
+      <section class="secondSection">
+        <div class="secondLine"></div>
+        <div class="secondSectionInfo">
+          <h4>Virtual reality as never seen before, it gives you freedom to do whatever you want without leaving your house, stay connected and give your best</h4>
+          <h2>LIVE THE EXPERIENCE.</h2>
+        </div>
+        <div class="secondImg">
+          <div class="purple firstSectionPurple"></div>
+          <img loading="lazy" class="lightOpacity secondSectionLight" src="images/bodyLight2.png" alt="">
+        </div>
+      </section>
+      <section class="bestGamesSection" id="games">
+        <h2>OUR BEST GAMES.</h2>
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img class='imgCarousel' loading="lazy" src="images/carouselImg1.png" alt=""> <h3 class="txtCarousel">BEAT SABER</h2> <button onclick=buyFirst() class="buttons btnCarousel">GET IT NOW</button></li>
+              <li class="splide__slide"><img class='imgCarousel' loading="lazy" src="images/carouselImg2.png" alt=""> <h3 class="txtCarousel">JURASSIC WORLD</h2> <button onclick=buySecond() class="buttons btnCarousel">GET IT NOW</button></li>
+              <li class="splide__slide"><img class='imgCarousel' loading="lazy" id="imgSize" src="images/carouselImg3.jpg" alt=""> <h3 class="txtCarousel">HALF - LIFE</h2> <button onclick=buyThird() class="buttons btnCarousel">GET IT NOW</button></li>
+            </ul>
+          </div>
+        </div>  
+
+        
+      </section>
+      <section class="storeSection" id="store">
+        <h2>STORE.</h2>
+        <div class="storeCards">
+          <div class="storeCard1">
+            <img loading="lazy" src="images/storeImg1.png" alt="">
+            <h2>VR LENS V3</h2>
+            <h4>Now with brighter colors, better graphics and more games than ever</h4>
+            <button class="buttons" onclick=buyStore()>Buy Now</button>
+          </div>
+          <div class="storeCard2">
+            <img loading="lazy" src="images/storeImg2.png" alt="">
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <hr>
+        <div class="rightFooter">
+          <h3>Join the movement</h3>
+          <div class="socialFooter">
+            <a href="#footer" onclick=social()><i class="fab fa-facebook-f"></i></a>
+            <a href="#footer" onclick=social()><i class="fab fa-instagram"></i></a>
+            <a href="#footer" onclick=social()><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+  </body>
+</html>
